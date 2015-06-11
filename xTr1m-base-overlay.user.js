@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name C&C: Tiberium Alliances - xTr1m's Base Overlay
-// @description Provides an overlay for return on investment values of building upgrades
+// @description Provides an overlay over the base of the gain/cost relationship of building upgrades by holding the Shift key
 // @namespace      http*://*.alliances.commandandconquer.com/*
 // @include        http*://*.alliances.commandandconquer.com/*
 // @version 1.0
@@ -34,7 +34,7 @@ var injectFunction = function()
                         
                         // TODO: Determine if the player is watching his base and doesn't have build/sell/move mode enabled
                         
-                        if (!!e.shiftKey && !xt.__windowOpened)
+                        if (!!e.ctrlKey && !xt.__windowOpened)
                         {
                             xt.__openWindow();
                         }
@@ -43,7 +43,7 @@ var injectFunction = function()
                     var onKeyUp = function(e) 
                     {
                         var xt = xTr1m_Base_Overlay.getInstance();
-                        if (!e.shiftKey && xt.__windowOpened)
+                        if (!e.ctrlKey && xt.__windowOpened)
                         {
                             xt.__closeWindow();
                         }
@@ -345,7 +345,7 @@ var injectFunction = function()
                     }
                     catch (e) 
                     {
-                        console.log("xTr1m_Base_Overlay.Window..getPrioList: ", e);
+                        console.log("xTr1m_Base_Overlay.Window.getResList: ", e);
                     }
                 },
             }
