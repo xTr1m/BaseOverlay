@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name xTr1m Base Overlay
+// @name C&C: Tiberium Alliances - xTr1m's Base Overlay
 // @description Provides an overlay for return on investment values of building upgrades
 // @namespace      http*://*.alliances.commandandconquer.com/*
 // @include        http*://*.alliances.commandandconquer.com/*
