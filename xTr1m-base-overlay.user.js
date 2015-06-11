@@ -136,7 +136,7 @@ var injectFunction = function()
                     var height = visCity.get_GridHeight() * zoomFactor;
                     this.collectData(ownCity);
                     
-                    for (var ri in this.Cache) 
+                    for (var ri in this.__buildings) 
                     {
                         var building = this.__buildings[ri];
                         var x = building.PosX * width;
@@ -216,7 +216,7 @@ var injectFunction = function()
                             {
                                 var building = resEntry[b];
                                 var index = building.PosY * 10 + building.PosX;
-                                if (!(index in this.Cache))
+                                if (!(index in this.__buildings))
                                 {
                                     this.__buildings[index] = building;
                                 }
@@ -227,7 +227,7 @@ var injectFunction = function()
                             }
                         }    
                         
-                        for (var j in this.Cache)
+                        for (var j in this.__buildings)
                         {
                             this.__buildings[j].Ratio = this.__buildings[j].Gain / this.__buildings[j].Cost;
                         }
