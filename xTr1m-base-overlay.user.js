@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name C&C: Tiberium Alliances - xTr1m's Base Overlay
-// @description Provides an overlay over the base of the gain/cost relationship of building upgrades by holding the Shift key
+// @description Provides an overlay over the base of the gain/cost relationship of building upgrades by holding the Control key
 // @namespace      http*://*.alliances.commandandconquer.com/*
 // @include        http*://*.alliances.commandandconquer.com/*
 // @version 1.0
